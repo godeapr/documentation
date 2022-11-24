@@ -1,4 +1,4 @@
-![afbeelding.png](/.attachments/afbeelding-9b8f9f3b-f818-467b-858d-be163129e381.png)
+![afbeelding](https://user-images.githubusercontent.com/118978576/203772886-bf7efdb5-5a01-43d3-80e7-102cdba472bf.png)
 Welcome to the user manual of Godeapr®, the application that finds Personal Identifiable Information (PII) in files, databases, and other sources. This document will explain how the Godeapr® application should be used via a step-by-step approach with clear visuals.
 
 [[_TOC_]]
@@ -11,18 +11,18 @@ Godeapr® can be installed on a Windows, Linux, or Mac machine as a native deskt
 # Starting the application
 After Godeapr® is installed, you will find the application between your regularly installed apps. To start Godeapr®, double click the icon from the taskbar.
 
-![afbeelding.png](/.attachments/afbeelding-6dfa257a-f49a-4481-87c9-26f2b58e7c81.png)
+![afbeelding](https://user-images.githubusercontent.com/118978576/203772927-790db10e-bace-47fa-a7ff-5970d57154f7.png)
 
 After start-up, your will be prompted with a welcoming page. To enter the application, select the deapr logo which will ask you to enter your management password chosen during installation. Without this password you will not be able to enter the application.
 
-![afbeelding.png](/.attachments/afbeelding-36480689-9de1-483a-aee9-c2fe9e663539.png =700x)
+![afbeelding](https://user-images.githubusercontent.com/118978576/203772967-f695a058-606d-4b15-93bf-bb1726ac25a8.png)
 
 Once a correct password is given, you will be led to the home page where there are three main actions: 
 - **Scan**: start a new scan
 - **Identify**: analyze a previous scan
 - **Comply**: export results
 
-![afbeelding.png](/.attachments/afbeelding-d6335f8b-c607-426f-ae7d-3b25ce25d1d7.png  =700x)
+![afbeelding](https://user-images.githubusercontent.com/118978576/203772997-5542890f-4ff9-4da8-bfff-11ac68df89ab.png)
 
 # Scan
 When starting a new scan, there are three different source types to connect to:
@@ -35,7 +35,7 @@ When scanning files on PII, you are able to select specific files or whole folde
 
 There is also an option to only scan for **structured** files. Meaning, files containing data in a column-row format, like .csv, .xls(x) or structured .txt files. When scanning structured files, you will get additional information on where PII is found on **deviating** locations in those structured files. More information on deviating findings can be found [in this chapter](https://dev.azure.com/Datamo/Horizon/_wiki/wikis/Horizon.wiki/39/01.-Godeapr-user-manual?anchor=regular-vs-deviating). When scanning for structured files only, the view will directly indicate which files will probably be scanned and which not by graying-out non-structured files.
 
-![afbeelding.png](/.attachments/afbeelding-103292d8-c222-4a7b-96e6-91f259ef87c6.png =700x)
+![afbeelding](https://user-images.githubusercontent.com/118978576/203773050-f643b58e-4089-445f-a8b7-e7d383a7c4f9.png)
 
 You can remove specific files from the list if you do not want to include them in the scan by selecting the trashcan icon. The (**!**) icon indicates that a (sub)directory in the view contains files that will not be scanned. The (**X**) icon indicates that the file will not be scanned.
 
@@ -63,7 +63,7 @@ There is also a tab 'not scannable', meaning this file cannot and will not be sc
 ```
 Godeapr® does not just scan plain text in for example ``` .docx ``` files (word documents), but it also processes images in the document in case there are any. Besides, also attachments found in ```.eml``` files (emails) will be scanned for PII. If there is PII found on e.g. the attachments of the ```.eml``` Godeapr® will indicate that the source is the ```.eml``` for those findings.
 
-![afbeelding.png](/.attachments/afbeelding-3e1941f5-c220-47c6-bdd8-4583a6f1db6d.png =700x)
+![afbeelding](https://user-images.githubusercontent.com/118978576/203773131-b2a74a99-aafe-4460-8a6f-5ff7b5957d1a.png)
 
 Proceed to [preferences](https://dev.azure.com/Datamo/Horizon/_wiki/wikis/Horizon.wiki/39/01.-Godeapr-user-manual?anchor=preferences) if you want to follow the next step when scanning a filesystem.
 
@@ -79,7 +79,7 @@ When scanning databases on PII, you are able to setup several database connectio
 - password
   - the password for the specific user
 
-![afbeelding.png](/.attachments/afbeelding-6c1fd666-b3c3-4824-b220-74113eec4284.png =700x)
+![afbeelding](https://user-images.githubusercontent.com/118978576/203773494-40ba5e79-850c-42a1-ab0d-004a96c0b24e.png)
 
 Optionally you can save the password. If you prefer not to, you will be prompted with a request to enter the password manually each time you want to run a scan with that specific database connection. Before saving the connection details, it is wise to test the connection first. Godeapr® will check whether it can reach the database or not. Please note that no firewalls or other network rules should be blocking the request from the location where Godeapr® is installed. 
 
@@ -90,7 +90,7 @@ If the database connection is successful, when clicking 'next', Godeapr® extrac
 
 Each time you change a column-mapping, the change will immediately be saved to the database. Also when you start a new scan with the same database connection, it remembers the mapping you did for a previous scan, so it should be an one-time activity only. If you do not know what kind of PII might be existing in a specific column, you can leave it 'unknown' and Godeapr® will predict the PII type for the column itself. 
 
-![afbeelding.png](/.attachments/afbeelding-5d58a36c-c52e-4b61-9bc3-0edb848fbd67.png =700x)
+![afbeelding](https://user-images.githubusercontent.com/118978576/203773542-55858e8b-2d03-43f8-8500-017702a6b9fb.png)
 
 The rationale is that often database columns have a very specific purpose within a system. One specific column might be used for saving names of customers while other columns just contain a regular timestamp of the creation date of that record. Giving Godeapr® more information on where it should and where it should not find specific PII types, gives you more accurate insights in where PII should not be existing in your database. 
 
@@ -120,11 +120,11 @@ For more information on each individual PII, please consult [this chapter](https
 
 Note: We **advise** not to scan for thousands of files at once while also scanning for all PII types. This might give overwhelming results and will not help in structurally and accurately identifying PII on unexpected locations. 
 
-![afbeelding.png](/.attachments/afbeelding-180b042f-9158-4918-8467-5482b03899c1.png =700x)
+![afbeelding](https://user-images.githubusercontent.com/118978576/203773579-0c9aba73-5836-4a2a-80e8-d52597945958.png)
 
 Besides selecting for specific PII, in this view you can also choose to **anonymize** the results. In the reporting overview, the actual results will be partially masked. This is useful in case PII should be hidden from the user using Godeapr®.
 
-![afbeelding.png](/.attachments/afbeelding-a6142db4-7e6f-4356-8fe3-e30c618886b5.png =700x)
+![afbeelding](https://user-images.githubusercontent.com/118978576/203773609-3d610dd4-38ec-4e6b-b8c5-4d5b2a9bec47.png)
 
 Once you select **start scan**, you are prompted to give the scan a suitable name (which you can alter later in the  section [**Identify**](https://dev.azure.com/Datamo/Horizon/_wiki/wikis/Horizon.wiki/39/01.-Godeapr-user-manual?anchor=loading-a-previous-scans) section). If no name was given, Godeapr® will give the scan a default name.
 
@@ -133,12 +133,12 @@ _This view is similar for scanning files or databases_.
 
 When a scan is started, findings are generated interactively during the process and visualized in a first overview of total findings and deviating findings (see [Regular vs. Deviating](https://dev.azure.com/Datamo/Horizon/_wiki/wikis/Horizon.wiki/39/01.-Godeapr-user-manual?anchor=regular-vs.-deviating)). The progress-bar is based on the number of files or tables yet need to be scanned by Godeapr®. 
 
-![afbeelding.png](/.attachments/afbeelding-fa6e851a-77c6-465f-b165-e4d9641c8bef.png =700x)
+![afbeelding](https://user-images.githubusercontent.com/118978576/203773632-87c162ba-5bf7-4889-a17c-164b56295f6a.png)
 
 ### General overview
 Once the scanning process is finished, you are automatically redirected to the reporting overview which looks more or less as follows:
 
-![Screenshot 2022-08-04 at 14.43.02.png](/.attachments/Screenshot%202022-08-04%20at%2014.43.02-80da40cd-5c58-4aac-b772-3ca9bb55d0c9.png =700x)
+![afbeelding](https://user-images.githubusercontent.com/118978576/203773674-69abe9a4-9f54-49d4-8420-88123034ad85.png)
 
 On the left side, there are 3 filtering possibilities:
 
@@ -166,7 +166,7 @@ _This view is only visible when scanning for structured data files or databases.
 
 When selecting the table overview (**4**), you will see an overview of findings per scanned source in tabular format. In this view you will see the column names of the scanned sources in the first column and their mapped PII type based on the [Regular vs. Deviating](https://dev.azure.com/Datamo/Horizon/_wiki/wikis/Horizon.wiki/39/01.-Godeapr-user-manual?anchor=regular-vs.-deviating) methods applied in the second column. The superscript per predicted PII type indicates whether the prediction was based on column-mapping, column names, or column data. The remaining three columns indicate the amount of findings per selected PII type in the PII filter on the left side. In this way, the view tells you how much PII is found per column in tabular data and based on which method Godeapr® predicted the PII type.
 
-![afbeelding.png](/.attachments/afbeelding-845e3e8b-e3ab-49f4-b5cf-b1a05254ac79.png =700x)
+![afbeelding](https://user-images.githubusercontent.com/118978576/203773729-9ed1eee9-07fd-4e0e-a7df-a868b94d6eea.png)
 
 ### Listed overview
 
@@ -174,13 +174,13 @@ For more details on the found PII, there is the listed overview. Here, all findi
 
 The red (**!**) indicated that the PII was found on a **deviating** location (_structured data only_). More information here: [Regular vs. Deviating](https://dev.azure.com/Datamo/Horizon/_wiki/wikis/Horizon.wiki/39/01.-Godeapr-user-manual?anchor=regular-vs.-deviating). For scans on unstructured data and files, this explanation mark will not be visible. 
 
-![afbeelding.png](/.attachments/afbeelding-c84734c6-70ac-4af8-ad5e-8a3e71ebbc48.png =700x)
+![afbeelding](https://user-images.githubusercontent.com/118978576/203773770-69dff018-f7cc-47f0-919c-79cf4df5b145.png)
 
 When you click one of the rows in the list, you see the source of the specific PII and the row where exactly the data is found. For unstructured scans, the row is an estimation as many unstructured documents like PDF files or images do not have a defined length nor rows. 
 
 When indicated to make the results **anonymized** in the [preferences](https://dev.azure.com/Datamo/Horizon/_wiki/wikis/Horizon.wiki/39/01.-Godeapr-user-manual?anchor=preferences) section. All found data will be partially masked to hide the PII from the user as you can see below. 
 
-![afbeelding.png](/.attachments/afbeelding-49742061-a4a3-4f37-a8de-8f79826798b1.png =700x)
+![afbeelding](https://user-images.githubusercontent.com/118978576/203773791-22873e7f-fe83-4ed6-920d-df722430e057.png)
 
 ## APIs
 When you want to scan data coming from an API, the client needs to be installed in the back-end to be able to call the endpoint and extract data. Currently, there are no standard APIs included in the application. To add your own API, please contact info@deapr.com.
@@ -191,7 +191,7 @@ Once scans are completed and you would like to analyze the results once more, yo
 ## Loading a previous scan
 You can choose to delete a previous scan be selection the trash icon, or to analyze the results once more be either selecting the magnifying glass or simply selecting the row and then the **Analyze** button in the upper right corner. Analyzing an previous scan will load the scan and bring you to the [reporting overview](https://dev.azure.com/Datamo/Horizon/_wiki/wikis/Horizon.wiki/39/01.-Godeapr-user-manual?anchor=reports).
 
-![afbeelding.png](/.attachments/afbeelding-c7fe7207-c899-4f0a-911b-b511b52f97fd.png =700x)
+![afbeelding](https://user-images.githubusercontent.com/118978576/203773843-595310fd-f9c2-41f1-8a28-a692f386d0df.png)
 
 You can also change the name of the scan by simply selecting the name of the scan you would like to change.
 
@@ -200,12 +200,13 @@ Besides loading a single scan, you can also compare multiple scans to see if any
 
 Note: It is possible to include as many scans as necessary in the comparison, but all scans need to have at least one finding and should be of the same mode. Meaning you should compare database scans with database scans and unstructured file system scans with unstructured file system scans. 
 
-![afbeelding.png](/.attachments/afbeelding-2740792d-224f-4cae-a7a5-cd3cc4a8b23f.png =700x)
+![afbeelding](https://user-images.githubusercontent.com/118978576/203773869-770d465c-3bbd-4ab8-bd99-a1ae59d787d1.png)
 
 When starting a comparison, all scans will be loaded and you will automatically be led to a comparison report like the one below. The scans are automatically ordered by their execution date throughout the report. The first table shows the amount of deviating results in case you are comparing either database scans or structured filesystem scans. The number of deviating findings is displayed in this table as well as the relative deviating findings based on the total number of findings for all scans for each group of PII types. The filters on the left are again available for quick and easy navigation through the scanned objects and PII types. 
 
-![afbeelding.png](/.attachments/afbeelding-9c1f27a5-7a6a-4819-a84c-ffe8f79c35a9.png =700x)
-![afbeelding.png](/.attachments/afbeelding-c25eb77a-2875-485d-a025-17edd8b7c2ba.png =700x)
+![afbeelding](https://user-images.githubusercontent.com/118978576/203773898-d430324e-8301-46fd-9a58-0cee977d4e13.png)
+![afbeelding](https://user-images.githubusercontent.com/118978576/203773927-279f0f1f-8dfa-49a3-9f3a-761af546253b.png)
+
 
 The graph is only showing the relative deviating findings per group of PII types per scan. In this way you quickly see the progress when reducing and cleaning the number of unwanted deviating findings.
 
@@ -222,7 +223,7 @@ When selecting the 'download' icon, you will be prompted with a couple of choice
 - To export findings from specific PII types
 - To export findings from specific sources
 
-![afbeelding.png](/.attachments/afbeelding-76182b8e-858b-4b77-949d-3afac5286031.png)
+![afbeelding](https://user-images.githubusercontent.com/118978576/203773992-0e68efda-3b47-411b-9fdd-9f0a18b7d519.png)
 
 The next step will be to select an export location on the machine where Godeapr® is installed. Hereafter, a ```.csv``` file will be generated including the:
 - Name of the source

@@ -185,6 +185,8 @@ When indicated to make the results **anonymized** in the [preferences](https://d
 ## APIs
 When you want to scan data coming from an API, the client needs to be installed in the back-end to be able to call the endpoint and extract data. Currently, there are no standard APIs included in the application. To add your own API, please contact info@deapr.com.
 
+
+
 # Identify
 Once scans are completed and you would like to analyze the results once more, you can do so in the **Identify** section. Here all previous scans are listed, including their given name, the mode and the run date of the scan, how many source objects Godeapr® scanned and how much PII was found in those objects. 
 

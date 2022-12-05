@@ -1,30 +1,3 @@
-<style>
-  img {
-    padding: 25px 0px; 
-  }
-  img[alt=afbeelding-40] { 
-    width: 40%; 
-    margin-left: calc(50% - max(min(20%, 200px), 100px)); 
-    min-width: 200px;
-    max-width: 400px;
-  }
-  img[alt=afbeelding-80] { 
-    width: 80%; 
-    margin-left: calc(50% - max(min(40%, 400px), 200px)); 
-    min-width: 400px;
-    max-width: 800px;
-  }
-  img[alt=afbeelding-100] { width: 100%; }
-
-  @media screen and (max-width: 320px) {
-    img[alt=afbeelding-40] { width: 100%; margin-left: 0px; min-width: 0px; }
-  }
-
-  @media screen and (max-width: 520px) {
-    img[alt=afbeelding-80] { width: 100%; margin-left: 0px; min-width: 0px; }
-  }
-</style>
-
 ![afbeelding-100](./screenshots/header.png)
 Welcome to the user manual of Godeapr®, the application that finds Personal Identifiable Information (PII) in files, databases, and other sources. This document will explain how the Godeapr® application should be used via a step-by-step approach with clear visuals.
 

@@ -1,6 +1,8 @@
 ![afbeelding-100](./screenshots/header.png)
 Welcome to the user manual of Godeapr®, the application that finds Personal Identifiable Information (PII) in files, databases, and other sources. This document will explain how the Godeapr® application should be used via a step-by-step approach with clear visuals.
 
+<p style="margin-top: 25px;"></p>
+
 <details>
 <summary>Table of Contents</summary>
 
@@ -60,8 +62,7 @@ Welcome to the user manual of Godeapr®, the application that finds Personal Ide
     - [Criminal convictions and offenses](#criminal-convictions-and-offenses)
 </details>
 
-` `  
-` `  
+<p style="margin-top: 25px;"></p>
 
 # Installation
 Godeapr® can be installed on a Windows, Linux, or Mac machine as a native desktop application or as a command line tool. This user manual focuses on the native desktop application. To install the application find it in the app store of your platform.
@@ -94,18 +95,24 @@ This password has the following requirements:
 
 ## Successive launches
 
-![afbeelding-80](./screenshots/welcome.png)
+<p align="center">
+<img src="./screenshots/welcome.png" style="width: 80%; max-width: 800px; padding: 25px 0px;" />
+</p>
 
 After start-up, your will be prompted with a welcoming page. To enter the application, select the deapr logo which will ask you to enter your management password chosen during installation. Without this password you will not be able to enter the application.
 
-![afbeelding-80](./screenshots/password.png)
+<p align="center">
+<img src="./screenshots/password.png" style="width: 80%; max-width: 800px; padding: 25px 0px;" />
+</p>
 
 Once a correct password is given, you will be led to the home page where there are three main actions: 
 - **Scan**: start a new scan
 - **Identify**: analyze a previous scan
 - **Comply**: export results
 
-![afbeelding-80](./screenshots/home.png)
+<p align="center">
+<img src="./screenshots/home.png" style="width: 80%; max-width: 800px; padding: 25px 0px;" />
+</p>
 
 # Scan
 When starting a new scan, there are three different source types to connect to:

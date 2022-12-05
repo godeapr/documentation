@@ -1,28 +1,132 @@
-![afbeelding](https://user-images.githubusercontent.com/118978576/203772886-bf7efdb5-5a01-43d3-80e7-102cdba472bf.png)
+<style>
+  img {
+    padding: 25px 0px; 
+  }
+  img[alt=afbeelding-40] { 
+    width: 40%; 
+    margin-left: calc(50% - max(min(20%, 200px), 100px)); 
+    min-width: 200px;
+    max-width: 400px;
+  }
+  img[alt=afbeelding-80] { 
+    width: 80%; 
+    margin-left: calc(50% - max(min(40%, 400px), 200px)); 
+    min-width: 400px;
+    max-width: 800px;
+  }
+  img[alt=afbeelding-100] { width: 100%; }
+
+  @media screen and (max-width: 320px) {
+    img[alt=afbeelding-40] { width: 100%; margin-left: 0px; min-width: 0px; }
+  }
+
+  @media screen and (max-width: 520px) {
+    img[alt=afbeelding-80] { width: 100%; margin-left: 0px; min-width: 0px; }
+  }
+</style>
+
+![afbeelding-100](./screenshots/header.png)
 Welcome to the user manual of Godeapr®, the application that finds Personal Identifiable Information (PII) in files, databases, and other sources. This document will explain how the Godeapr® application should be used via a step-by-step approach with clear visuals.
 
-[[_TOC_]]
+<details>
+<summary>Table of Contents</summary>
+
+- [Installation](#installation)
+- [Starting the application](#starting-the-application)
+  - [First launch](#first-launch)
+  - [Successive launches](#successive-launches)
+- [Scan](#scan)
+  - [Files](#files)
+    - [Meta scan](#meta-scan)
+  - [Databases](#databases)
+    - [Column-mapping](#column-mapping)
+    - [Regular vs. Deviating](#regular-vs-deviating)
+  - [Preferences](#preferences)
+  - [Reports](#reports)
+    - [General overview](#general-overview)
+    - [Tabular overview](#tabular-overview)
+    - [Listed overview](#listed-overview)
+  - [APIs](#apis)
+- [Identify](#identify)
+  - [Loading a previous scan](#loading-a-previous-scan)
+  - [Comparing multiple scans](#comparing-multiple-scans)
+- [Comply](#comply)
+  - [Export](#export)
+- [Demo version](#demo-version)
+- [Appendix](#appendix)
+  - [Personal Identifiable Information](#personal-identifiable-information)
+    - [First name](#first-name)
+    - [Last name](#last-name)
+    - [Street name](#street-name)
+    - [House number](#house-number)
+    - [Postal Code](#postal-code)
+    - [City](#city)
+    - [Country](#country)
+    - [Nationality](#nationality)
+    - [BSN](#bsn)
+    - [Credit-card](#credit-card)
+    - [IBAN](#iban)
+    - [Passport](#passport)
+    - [Drivers license](#drivers-license)
+    - [Email](#email)
+    - [License plate](#license-plate)
+    - [Phone number](#phone-number)
+    - [Gender](#gender)
+    - [Date of birth](#date-of-birth)
+    - [Civil status](#civil-status)
+    - [Education level](#education-level)
+    - [Financial information](#financial-information)
+    - [Political party](#political-party)
+    - [Political preference](#political-preference)
+    - [Religion](#religion)
+    - [Labor union](#labor-union)
+    - [Ethnicity](#ethnicity)
+    - [Sexual preference](#sexual-preference)
+    - [Medical information](#medical-information)
+    - [Medicines](#medicines)
+    - [Criminal convictions and offenses](#criminal-convictions-and-offenses)
+</details>
+
+` `  
+` `  
 
 # Installation
-Godeapr® can be installed on a Windows, Linux, or Mac machine as a native desktop application or as a command line tool. This user manual focuses on the native desktop application. During the installation, a management password needs to be chosen. With only this password, you can access the application.  
-
-<-- Add visuals about installation -->
+Godeapr® can be installed on a Windows, Linux, or Mac machine as a native desktop application or as a command line tool. This user manual focuses on the native desktop application. To install the application find it in the app store of your platform.
 
 # Starting the application
 After Godeapr® is installed, you will find the application between your regularly installed apps. To start Godeapr®, double click the icon from the taskbar.
 
-![afbeelding](https://user-images.githubusercontent.com/118978576/203772927-790db10e-bace-47fa-a7ff-5970d57154f7.png)
+![afbeelding-40](./screenshots/dock.png)
+
+## First launch
+
+When launching the application for the first time you will be prompted for a license key. If you don't have a license key you can choose to use to demo version of the application. To read more about the demo version, see [this chapter](#demo-version).
+
+![afbeelding-80](./screenshots/license.png)
+
+After a valid license key is entered or the demo version is activated you're prompted to set a password. This password is needed to unlock to application, to prevent other people to be able to see your sensitive data.
+This password has the following requirements:
+- At least 8 characters long;
+- At least 1 uppercase letter;
+- At least 1 digit;
+- At least 1 special character
+
+![afbeelding-80](./screenshots/password_setup.png)
+
+## Successive launches
+
+![afbeelding-80](./screenshots/welcome.png)
 
 After start-up, your will be prompted with a welcoming page. To enter the application, select the deapr logo which will ask you to enter your management password chosen during installation. Without this password you will not be able to enter the application.
 
-![afbeelding](https://user-images.githubusercontent.com/118978576/203772967-f695a058-606d-4b15-93bf-bb1726ac25a8.png)
+![afbeelding-80](./screenshots/password.png)
 
 Once a correct password is given, you will be led to the home page where there are three main actions: 
 - **Scan**: start a new scan
 - **Identify**: analyze a previous scan
 - **Comply**: export results
 
-![afbeelding](https://user-images.githubusercontent.com/118978576/203772997-5542890f-4ff9-4da8-bfff-11ac68df89ab.png)
+![afbeelding-80](./screenshots/home.png)
 
 # Scan
 When starting a new scan, there are three different source types to connect to:
@@ -33,7 +137,7 @@ When starting a new scan, there are three different source types to connect to:
 ## Files
 When scanning files on PII, you are able to select specific files or whole folders. This folder can be a local folder on your machine, a mapped network-drive which is used throughout your organization, or locally mapped SharePoint directories for example. You can select multiple directories and files which will all be listed in the view.  
 
-There is also an option to only scan for **structured** files. Meaning, files containing data in a column-row format, like .csv, .xls(x) or structured .txt files. When scanning structured files, you will get additional information on where PII is found on **deviating** locations in those structured files. More information on deviating findings can be found [in this chapter](https://dev.azure.com/Datamo/Horizon/_wiki/wikis/Horizon.wiki/39/01.-Godeapr-user-manual?anchor=regular-vs-deviating). When scanning for structured files only, the view will directly indicate which files will probably be scanned and which not by graying-out non-structured files.
+There is also an option to only scan for **structured** files. Meaning, files containing data in a column-row format, like .csv, .xls(x) or structured .txt files. When scanning structured files, you will get additional information on where PII is found on **deviating** locations in those structured files. More information on deviating findings can be found [in this chapter](#regular-vs-deviating). When scanning for structured files only, the view will directly indicate which files will probably be scanned and which not by graying-out non-structured files.
 
 ![afbeelding](https://user-images.githubusercontent.com/118978576/203773050-f643b58e-4089-445f-a8b7-e7d383a7c4f9.png)
 
@@ -236,6 +340,10 @@ The next step will be to select an export location on the machine where Godeapr�
 - the PII type
 - the original data (_non anonymized exports only_)
 - the matched data (_non anonymized exports only_)
+
+# Demo version
+
+Todo
 
 
 # Appendix

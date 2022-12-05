@@ -69,7 +69,7 @@ Godeapr® can be installed on a Windows, Linux, or Mac machine as a native deskt
 # Starting the application
 After Godeapr® is installed, you will find the application between your regularly installed apps. To start Godeapr®, double click the icon from the taskbar.
 
-<img src="./screenshots/dock.png" style="width: 40%; margin-left: calc(50% - min(20%, 200px)); max-width: 400px;" />
+<img src="./screenshots/dock.png" align="center" style="width: 40%; margin-left: calc(50% - min(20%, 200px)); max-width: 400px;" />
 
 ## First launch
 

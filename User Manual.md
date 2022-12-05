@@ -77,7 +77,9 @@ After Godeapr® is installed, you will find the application between your regular
 
 When launching the application for the first time you will be prompted for a license key. If you don't have a license key you can choose to use to demo version of the application. To read more about the demo version, see [this chapter](#demo-version).
 
-![afbeelding-80](./screenshots/license.png)
+<p align="center">
+<img src="./screenshots/license.png" style="width: 80%; max-width: 800px; padding: 25px 0px;" />
+</p>
 
 After a valid license key is entered or the demo version is activated you're prompted to set a password. This password is needed to unlock to application, to prevent other people to be able to see your sensitive data.
 This password has the following requirements:
@@ -86,7 +88,9 @@ This password has the following requirements:
 - At least 1 digit;
 - At least 1 special character
 
-![afbeelding-80](./screenshots/password_setup.png)
+<p align="center">
+<img src="./screenshots/password_setup.png" style="width: 80%; max-width: 800px; padding: 25px 0px;" />
+</p>
 
 ## Successive launches
 
